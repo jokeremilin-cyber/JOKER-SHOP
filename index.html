@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LOME STYLE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="nav">
+    <h1>LOME STYLE</h1>
+    <button id="cartBtn">Panier (<span id="count">0</span>)</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <h2>STYLE THAT MOVES<br>WITH YOU</h2>
+    <p>Livraison 24h à Lomé • MoMo / Flooz / Cash</p>
+    <a href="#products" class="btn">Shop the Drop →</a>
+  </section>
+  <section id="products" class="grid"></section>
+</main>
+
+<div id="drawer" class="hidden">
+  <div class="drawer-box">
+    <div class="drawer-head"><h3>Ton Panier</h3><button id="close">X</button></div>
+    <div id="items"></div>
+    <div class="total"><span>Total:</span><b id="total">0 FCFA</b></div>
+    <button id="order" class="btn-whatsapp">Commander sur WhatsApp</button>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
